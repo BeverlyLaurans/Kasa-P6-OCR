@@ -1,12 +1,18 @@
-// import { locationList } from "../../datas/locationList.js"
-// import { useParams } from 'react-router-dom'
+import { locationList } from "../../datas/locationList.js"
+import { Link } from "react-router-dom"
 import "../../styles/LocationList.css"
 
 function LocationList() {
-    // const { locationId } = useParams()
     return (
-        <div>
-
+        <div className="location-list">
+            {locationList.map((location) => (
+          <div key={location.id} className="location-card">
+            <Link to={`/locations/${location.id}`}>
+              <img src={location.pictures[0]} alt={location.title}/>
+              <h2>{location.title}</h2>
+            </Link>
+          </div>
+        ))}
         </div>
     )
 }

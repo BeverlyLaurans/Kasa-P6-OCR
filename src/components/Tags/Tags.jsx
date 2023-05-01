@@ -3,7 +3,7 @@ import "../../styles/Tags.css"
 function Tags() {
     return (
       <div>
-        <p></p>
+        <p>Tag</p>
       </div>
     )
   }
