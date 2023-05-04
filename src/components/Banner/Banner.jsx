@@ -1,11 +1,12 @@
-import banner from "../../assets/banner/banner-kasa.jpg"
 import "../../styles/Banner.css"
 
-function Banner() {
-    return (
+function Banner(props) {
+  const {imgSrc, imgText, imgAlt} = props
+    
+  return (
       <div className="banner">
-        <img src={banner} alt="Bannière avec paysage"/>
-        <h1>Chez vous, partout et ailleurs</h1>
+        <img src={imgSrc} alt={imgAlt}/>
+        <h1>{imgText}</h1>
       </div>
     )
   }

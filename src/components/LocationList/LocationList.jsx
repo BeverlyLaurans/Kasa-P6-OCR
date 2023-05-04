@@ -1,14 +1,14 @@
-import { locationList } from "../../datas/locationList.js"
+import { locationDatas } from "../../datas/locationDatas.js"
 import { Link } from "react-router-dom"
 import "../../styles/LocationList.css"
 
 function LocationList() {
     return (
         <div className="location-list">
-            {locationList.map((location) => (
+            {locationDatas.map((location) => (
           <div key={location.id} className="location-card">
             <Link to={`/locations/${location.id}`}>
-              <img src={location.pictures[0]} alt={location.title}/>
+              <img src={location.cover} alt={location.title}/>
               <h2>{location.title}</h2>
             </Link>
           </div>

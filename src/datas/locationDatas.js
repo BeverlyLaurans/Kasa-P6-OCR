@@ -1,4 +1,4 @@
-export const locationList = [
+export const locationDatas = [
 	{
 		"id": "c67ab8a7",
 		"title": "Appartement cosy",
