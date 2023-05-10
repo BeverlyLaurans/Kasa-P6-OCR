@@ -4,6 +4,8 @@
     width: 100%;
     height: 415px;
     border-radius: 25px;
+    justify-content: center ;
+    align-items: center;
 }
 
 .slideshow-image {
@@ -11,11 +13,21 @@
     height: 100%;
     border-radius: 25px;
     object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slideshow-informations {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
 }
 
 .slideshow-navigation {
-    position: absolute;
+    display: flex;
     flex-direction: row;
+    position: absolute;
 }
 
 .slideshow-navigation button {
@@ -23,8 +35,13 @@
     padding: 0;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .slideshow-counter {
     position: absolute;
+}
+
+.slideshow-counter p {
+    color: #FFFFFF;
 }

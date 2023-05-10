@@ -1,9 +1,11 @@
 import "../../styles/Tags.css"
 
-function Tags() {
+function Tags(props) {
+  const {tagName} = props
+
     return (
-      <div>
-        <p>Tag</p>
+      <div className="tag">
+        <p>{tagName}</p>
       </div>
     )
   }

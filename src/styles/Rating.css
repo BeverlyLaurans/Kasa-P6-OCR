@@ -1,0 +1,16 @@
+.rating {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    margin: 15px 0;
+}
+
+.stars-list {
+    justify-content: flex-end;
+}
+
+.star-item {
+    display: flex;
+    gap: 10px;
+}
