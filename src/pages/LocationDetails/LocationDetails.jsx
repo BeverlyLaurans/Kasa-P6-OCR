@@ -1,22 +1,24 @@
-import { locationDatas } from "../../datas/locationDatas"
-import { useParams } from "react-router-dom"
-// import { useState, useEffect } from "react"
-import Slideshow from "../../components/Slideshow/Slideshow"
-import Tags from "../../components/Tags/Tags"
-// import starEmpty from "../../assets/icons/star-empty.svg"
-// import starFull from "../../assets/icons/star-full.svg"
-import Collapse from "../../components/Collapse/Collapse"
-import Rating from "../../components/Rating/Rating"
-import "../../styles/Location.css"
+import { locationDatas } from "../../datas/locationDatas";
+import { useParams } from "react-router-dom";
+import Slideshow from "../../components/Slideshow/Slideshow";
+import Tags from "../../components/Tags/Tags";
+import Collapse from "../../components/Collapse/Collapse";
+import Rating from "../../components/Rating/Rating";
+import Error from "../../components/Error/Error";
+import "../../styles/Location.css";
 
 function LocationDetails() {
   const { locationId } = useParams();
   const location = locationDatas.find((location) => location.id === locationId);
 
+  if (!location) {
+    return <Error />
+  } else {
     return (
-      <div>
+      <main>
         <Slideshow 
         imgSrc={location.pictures}
+        imgAlt={`Photo ${location.title} ${location.location}`}
         />
         <div className="location-about">
           <div className="location-informations">
@@ -57,8 +59,9 @@ function LocationDetails() {
               }
             />
         </div>
-      </div>
+      </main>
     )
+    }
   }
   
-export default LocationDetails
+export default LocationDetails;

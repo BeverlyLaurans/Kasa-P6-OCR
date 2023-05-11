@@ -1,13 +1,13 @@
-import "../../styles/Tags.css"
+import "../../styles/Tags.css";
 
 function Tags(props) {
-  const {tagName} = props
+  const {tagName} = props;
 
     return (
       <div className="tag">
-        <p>{tagName}</p>
+        <div className="tag-name">{tagName}</div>
       </div>
     )
   }
   
-export default Tags
+export default Tags;

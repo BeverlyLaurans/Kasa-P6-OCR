@@ -1,21 +1,20 @@
-import { useState, useEffect } from "react"
-import starEmpty from "../../assets/icons/star-empty.svg"
-import starFull from "../../assets/icons/star-full.svg"
-import "../../styles/Rating.css"
+import starEmpty from "../../assets/icons/star-empty.svg";
+import starFull from "../../assets/icons/star-full.svg";
+import "../../styles/Rating.css";
 
 function Rating(props) {
-    const {rating} = props
+    const {rating} = props;
     const maxRating = 5;
     const fullStars = rating;
     const emptyStars = maxRating - fullStars;
     const stars = [];
 
     for (let i = 0; i < fullStars; i++) {
-        stars.push(starFull)
+        stars.push(starFull);
     }
 
     for (let i = 0; i < emptyStars; i++) {
-        stars.push(starEmpty)
+        stars.push(starEmpty);
     }
 
     return (
@@ -32,4 +31,4 @@ function Rating(props) {
 
 }
 
-export default Rating
+export default Rating;

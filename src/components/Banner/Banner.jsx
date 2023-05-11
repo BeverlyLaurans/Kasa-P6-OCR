@@ -1,7 +1,7 @@
-import "../../styles/Banner.css"
+import "../../styles/Banner.css";
 
 function Banner(props) {
-  const {imgSrc, imgText, imgAlt} = props
+  const {imgSrc, imgText, imgAlt} = props;
     
   return (
       <div className="banner">
@@ -11,4 +11,4 @@ function Banner(props) {
     )
   }
   
-  export default Banner
+  export default Banner;

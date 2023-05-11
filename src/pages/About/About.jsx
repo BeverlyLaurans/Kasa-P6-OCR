@@ -1,10 +1,10 @@
-import Banner from "../../components/Banner/Banner"
-import bannerImage from "../../assets/banner/banner-about.jpg"
-import Collapse from "../../components/Collapse/Collapse"
+import Banner from "../../components/Banner/Banner";
+import bannerImage from "../../assets/banner/banner-about.jpg";
+import Collapse from "../../components/Collapse/Collapse";
 
 function About() {
     return (
-      <div>
+      <main>
         <Banner 
           imgSrc={bannerImage}
           imgAlt="Paysage de montagnes"
@@ -27,8 +27,8 @@ function About() {
             categoryDetails="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
           />
         </div>
-      </div>
+      </main>
     )
   }
   
-  export default About
+  export default About;

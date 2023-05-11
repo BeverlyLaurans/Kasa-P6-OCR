@@ -1,18 +1,18 @@
-import { useState, useEffect } from "react"
-import arrowDown from "../../assets/icons/white-arrow-down.svg"
-import arrowUp from "../../assets/icons/white-arrow-up.svg"
-import "../../styles/Collapse.css"
+import { useState, useEffect } from "react";
+import arrowDown from "../../assets/icons/white-arrow-down.svg";
+import arrowUp from "../../assets/icons/white-arrow-up.svg";
+import "../../styles/Collapse.css";
 
 function Collapse(props) {
-  const {categoryName, categoryDetails} = props
-  const [activeButton, setActiveButton] = useState(false)
-  const [arrowDirection, setArrowDirection] = useState("down")
+  const {categoryName, categoryDetails} = props;
+  const [activeButton, setActiveButton] = useState(false);
+  const [arrowDirection, setArrowDirection] = useState("down");
 
   useEffect(() => {
     if (activeButton) {
-      setArrowDirection("up")
+      setArrowDirection("up");
     } else {
-      setArrowDirection("down")
+      setArrowDirection("down");
     }
   }, [activeButton])
 
@@ -31,4 +31,4 @@ function Collapse(props) {
     )
   }
   
-  export default Collapse
+  export default Collapse;

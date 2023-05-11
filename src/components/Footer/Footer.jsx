@@ -1,5 +1,5 @@
-import logo from "../../assets/logo/logo-kasa-white.svg"
-import "../../styles/Footer.css"
+import logo from "../../assets/logo/logo-kasa-white.svg";
+import "../../styles/Footer.css";
 
 function Footer() {
     return (
@@ -10,4 +10,4 @@ function Footer() {
     )
   }
   
-export default Footer
+export default Footer;

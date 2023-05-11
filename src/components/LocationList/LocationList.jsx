@@ -1,6 +1,6 @@
-import { locationDatas } from "../../datas/locationDatas.js"
-import { Link } from "react-router-dom"
-import "../../styles/LocationList.css"
+import { locationDatas } from "../../datas/locationDatas.js";
+import { Link } from "react-router-dom";
+import "../../styles/LocationList.css";
 
 function LocationList() {
     return (
@@ -17,4 +17,4 @@ function LocationList() {
     )
 }
 
-export default LocationList
+export default LocationList;
