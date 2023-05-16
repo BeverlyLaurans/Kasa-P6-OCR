@@ -23,20 +23,28 @@ function Slideshow(props) {
     }
   }
 
+  if (imgSrc.length === 1) {
+    return (
+      <div className="slideshow">
+        <img src={imgSrc[imageIndex]} alt={imgAlt} className="slideshow-image"/>
+        </div>
+    )
+  } else {
       return (
         <div className="slideshow">
             <img src={imgSrc[imageIndex]} alt={imgAlt} className="slideshow-image"/>
             <div className="slideshow-informations">
               <div className="slideshow-navigation">
-                  <button onClick={previousPicture}><img src={previousArrow}/></button>
-                  <button onClick={nextPicture}><img src={nextArrow}/></button>
+                  <button onClick={previousPicture}><img src={previousArrow} alt="Previous arrow"/></button>
+                  <button onClick={nextPicture}><img src={nextArrow} alt="Next arrow"/></button>
               </div>
-              <div className="slideshow-counter">
-                  <p>{imageIndex + 1}/{imgSrc.length}</p>
-              </div>
-              </div>
+            </div>
+            <div className="slideshow-counter">
+                <p>{imageIndex + 1}/{imgSrc.length}</p>
+            </div>
         </div>
       )
     }
+}
     
     export default Slideshow;

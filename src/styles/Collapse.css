@@ -1,34 +1,8 @@
-.accordions-wrapper-about {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-    gap: 30px;
-}
-
-.accordions-wrapper-location {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 60px;
-    margin-bottom: 30px;
-}
-
 .accordion {
     flex-direction: column;
     align-items: center;
     background-color: #F6F6F6;
     width: 83%;
-}
-
-.accordions-wrapper-about .accordion {
-    border-radius: 5px;
-}
-
-.accordions-wrapper-location .accordion {
-    border-radius: 15px;
 }
 
 .accordion-title {
@@ -44,29 +18,9 @@
     cursor: pointer;
 }
 
-.accordions-wrapper-about .accordion-title {
-    border-radius: 5px;
-}
-
-.accordions-wrapper-location .accordion-title {
-    border-radius: 10px;
-}
-
 .accordion-title p {
     margin: 0;
     color: #FFFFFF;
-}
-
-.accordions-wrapper-about .accordion-title p {
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.accordions-wrapper-location .accordion-title p {
-    margin: 0;
-    color: #FFFFFF;
-    font-size: 18px;
-    font-weight: 500;
 }
 
 .accordion-title img {
@@ -76,30 +30,11 @@
 
 .accordion-description {
     background-color: #F6F6F6;
-    /* width: 100%; */
-    height: fit-content;
+    /* height: fit-content; */
 }
 
-.accordions-wrapper-about .accordion-description {
-    border-radius: 5px;
-    padding: 20px 15px;
-}
-
-.accordions-wrapper-location .accordion-description {
-    border-radius: 10px;
-    padding: 30px 20px;
-}
-
-.accordion-description p {
+.accordion-description {
     color: #FF6060;
-}
-
-.accordions-wrapper-about .accordion-description p {
-    font-size: 22px;
-    font-weight: 400;
-}
-
-.accordions-wrapper-location .accordion-description p {
     font-size: 17px;
     font-weight: 400;
 }

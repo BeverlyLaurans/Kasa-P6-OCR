@@ -24,7 +24,7 @@ function Collapse(props) {
         </button>
         {activeButton && (
         <div className="accordion-description">
-          <p>{categoryDetails}</p>
+          <div>{categoryDetails}</div>
         </div>
         )}
       </div>

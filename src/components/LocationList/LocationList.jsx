@@ -8,7 +8,10 @@ function LocationList() {
             {locationDatas.map((location) => (
           <div key={location.id} className="location-card">
             <Link to={`/locations/${location.id}`}>
-              <img src={location.cover} alt={location.title}/>
+              <div className="image-container">
+                <img src={location.cover} alt={location.title}/>
+                <div className="image-overlay"></div>
+              </div>
               <h2>{location.title}</h2>
             </Link>
           </div>

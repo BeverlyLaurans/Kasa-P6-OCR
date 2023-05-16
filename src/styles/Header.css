@@ -24,6 +24,11 @@ header a {
     text-decoration: none;
 }
 
-header a:focus {
+header a.active {
     text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.1em;
+    -webkit-text-underline-offset: 0.1em;
+    -moz-text-underline-offset: 0.1em;
+    -ms-text-underline-offset: 0.1em;
 }

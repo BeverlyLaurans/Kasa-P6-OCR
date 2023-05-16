@@ -4,7 +4,7 @@ import Slideshow from "../../components/Slideshow/Slideshow";
 import Tags from "../../components/Tags/Tags";
 import Collapse from "../../components/Collapse/Collapse";
 import Rating from "../../components/Rating/Rating";
-import Error from "../../components/Error/Error";
+import { Navigate } from "react-router-dom";
 import "../../styles/Location.css";
 
 function LocationDetails() {
@@ -12,7 +12,7 @@ function LocationDetails() {
   const location = locationDatas.find((location) => location.id === locationId);
 
   if (!location) {
-    return <Error />
+    return <Navigate to="/error" />;
   } else {
     return (
       <main>
@@ -21,24 +21,26 @@ function LocationDetails() {
         imgAlt={`Photo ${location.title} ${location.location}`}
         />
         <div className="location-about">
-          <div className="location-informations">
-            <h1>{location.title}</h1>
-            <p>{location.location}</p>
-            <Tags 
-            tagName={
-              <ul className="tags-list">
-                {location.tags.map((tag) => (
-                      <li className="tag-item" key={`${tag}-${location.id}`}>{tag}</li>
-                      ))}
-              </ul>
-            }
-            />
-          </div>
-          <div className="host-informations">
-            <div className="host">
-              <p>{location.host.name}</p>
-              <img src={location.host.picture}/>
+          <div className="location-main-informations">
+            <div className="location-title">
+              <h1>{location.title}</h1>
+              <p>{location.location}</p>
             </div>
+            <div className="host-informations">
+              <p>{location.host.name}</p>
+              <img src={location.host.picture} alt="Host"/>
+            </div>
+          </div>
+          <div className="location-other-informations">
+            <Tags 
+              tagName={
+                <ul className="tags-list">
+                  {location.tags.map((tag) => (
+                        <li className="tag-item" key={`${tag}-${location.id}`}>{tag}</li>
+                        ))}
+                </ul>
+              }
+            />
             <Rating 
             rating={location.rating}/>
           </div>
