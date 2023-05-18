@@ -11,5 +11,13 @@ body {
 }
 
 main {
-  padding: 0 85px 0 85px;
+  padding: 0 7%;
 }
+
+@media screen and (max-width: 480px) {
+  main {
+    padding: 0 5%;
+  }
+}
+
+

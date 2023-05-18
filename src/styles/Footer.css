@@ -17,3 +17,9 @@ footer p {
     color: #FFFFFF;
     margin: 0;
 }
+
+@media screen and (max-width: 480px) {
+    footer p {
+        font-size: 12px;
+    }
+}
