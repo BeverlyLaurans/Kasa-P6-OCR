@@ -9,66 +9,66 @@
     align-items: center;
     margin-bottom: 30px;
     gap: 30px;
-}
-
-.accordions-wrapper-about .accordion {
-    border-radius: 5px;
-}
-
-.accordions-wrapper-about .accordion-title {
-    border-radius: 5px;
-}
-
-.accordions-wrapper-about .accordion-title p {
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.accordions-wrapper-about .accordion-description {
-    font-size: 22px;
-    font-weight: 400;
-    border-radius: 5px;
-    padding: 20px 15px;
+    .accordion {
+        border-radius: 5px;
+        &__title {
+            border-radius: 5px;
+            p {
+                font-size: 24px;
+                font-weight: 400;
+            }
+        }
+        &__description {
+            font-size: 22px;
+            font-weight: 400;
+            border-radius: 5px;
+            padding: 20px 15px;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
     .about-banner .banner {
         height: 250px;
         border-radius: 10px;
-    }
-    .about-banner .banner img {
-        border-radius: 10px;
+        img {
+            border-radius: 10px;
+        }
     }
     .accordion {
         width: 100%;
     }
-    .accordions-wrapper-about .accordion-title {
-        height: 40px;
-    }
-    .accordions-wrapper-about .accordion-title p {
-        font-size: 18px;
-    }
-    .accordions-wrapper-about .accordion-title img {
-        width: 20px;
-        height: 10px;
-    }
-    .accordions-wrapper-about .accordion-description {
-        font-size: 16px;
+    .accordions-wrapper-about {
+        .accordion__title {
+            height: 40px;
+            p {
+                font-size: 18px;
+            }
+            img {
+                width: 20px;
+                height: 10px;
+            }
+        }
+        .accordion__description {
+            font-size: 16px;
+        }
     }
 }
 
 @media screen and (max-width: 480px) {
-    .accordions-wrapper-about .accordion-title {
-        height: 30px;
-    }
-    .accordions-wrapper-about .accordion-title p {
-        font-size: 13px;
-    }
-    .accordions-wrapper-about .accordion-title img {
-        width: 16px;
-        height: 9px;
-    }
-    .accordions-wrapper-about .accordion-description {
-        font-size: 12px;
+    .accordions-wrapper-about {
+        .accordion__title {
+            height: 30px;
+            p {
+                font-size: 13px;
+            }
+            img {
+                width: 16px;
+                height: 9px;
+            }
+        }
+        .accordion__description {
+            font-size: 12px;
+        }
     }
 }

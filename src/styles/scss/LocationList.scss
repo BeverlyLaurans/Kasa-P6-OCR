@@ -6,57 +6,50 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
+    justify-content: center;
 }
 
-.location-list a {
-    display: flex;
-    align-items: flex-end;
-}
-
-.location-card {
+.location-list__card {
     position: relative;
     border-radius: 10px;
     display: flex;
     height: 300px;
-}
-
-.location-card a {
-    position: relative;
-}
-
-.location-card .image-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.location-card img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-}
-
-.location-list h2 {
-    position: absolute;
-    font-size: 18px;
-    font-weight: 500;
-    text-decoration: none;
-    color: #FFFFFF;
-    padding: 0 18px 18px 18px;
-    margin: 0;
+    a {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            img {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            .image-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+            }
+        }
+        h2 {
+            position: absolute;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: none;
+            color: #FFFFFF;
+            padding: 0 18px 18px 18px;
+            margin: 0;
+        }
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -68,21 +61,24 @@
 
 @media screen and (max-width: 768px) {
     .location-list {
-        /* grid-template-columns: 1fr; */
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
         padding: 0;
-        background-color: #FFFFFF;
-    }
-    .location-card {
-        justify-content: center;
         width: 100%;
+        background-color: #FFFFFF;
+        .location-list__card {
+            justify-content: center;
+            width: 100%;
+            a {
+                width: 100%;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 480px) {
-    .location-card {
+    .location-list__card {
         height: 250px;
     }
 }

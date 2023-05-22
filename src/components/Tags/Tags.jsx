@@ -5,7 +5,7 @@ function Tags(props) {
 
     return (
       <div className="tag">
-        <div className="tag-name">{tagName}</div>
+        <div className="tag__name">{tagName}</div>
       </div>
     )
   }

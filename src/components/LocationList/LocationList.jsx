@@ -6,7 +6,7 @@ function LocationList() {
     return (
         <div className="location-list">
             {locationDatas.map((location) => (
-          <div key={location.id} className="location-card">
+          <div key={location.id} className="location-list__card">
             <Link to={`/locations/${location.id}`}>
               <div className="image-container">
                 <img src={location.cover} alt={location.title}/>

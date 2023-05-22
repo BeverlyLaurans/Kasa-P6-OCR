@@ -20,9 +20,9 @@ function Rating(props) {
     return (
         <div className="rating">
             <ul className="stars-list">
-                <li className="star-item">
+                <li className="stars-list__item">
                 {stars.map((star, index) => (
-                <img key={index} src={star} />
+                <img key={index} src={star} alt="étoile"/>
             ))}
                 </li>
             </ul>
