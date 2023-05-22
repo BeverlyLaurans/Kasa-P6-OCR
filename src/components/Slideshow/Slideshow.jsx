@@ -1,7 +1,7 @@
 import { useState } from "react";
 import previousArrow from "../../assets/icons/previous-arrow.svg";
 import nextArrow from "../../assets/icons/next-arrow.svg";
-import "../../styles/Slideshow.css";
+import "../../styles/scss/Slideshow.scss";
 
 function Slideshow(props) {
   const {imgSrc, imgAlt} = props;

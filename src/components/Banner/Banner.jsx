@@ -1,4 +1,4 @@
-import "../../styles/Banner.css";
+import "../../styles/scss/Banner.scss";
 
 function Banner(props) {
   const {imgSrc, imgText, imgAlt} = props;

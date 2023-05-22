@@ -1,15 +1,17 @@
 import Banner from "../../components/Banner/Banner";
 import bannerImage from "../../assets/banner/banner-about.jpg";
 import Collapse from "../../components/Collapse/Collapse";
-import "../../styles/About.css"
+import "../../styles/scss/About.scss"
 
 function About() {
     return (
       <main>
-        <Banner 
-          imgSrc={bannerImage}
-          imgAlt="Paysage de montagnes"
-        />
+        <div className="about-banner">
+          <Banner 
+            imgSrc={bannerImage}
+            imgAlt="Paysage de montagnes"
+          />
+        </div>
         <div className="accordions-wrapper-about">
           <Collapse 
             categoryName="Fiabilité"

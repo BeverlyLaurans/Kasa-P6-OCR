@@ -1,6 +1,6 @@
 import starEmpty from "../../assets/icons/star-empty.svg";
 import starFull from "../../assets/icons/star-full.svg";
-import "../../styles/Rating.css";
+import "../../styles/scss/Rating.scss";
 
 function Rating(props) {
     const {rating} = props;

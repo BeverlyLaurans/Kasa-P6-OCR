@@ -7,7 +7,8 @@ import About from "./pages/About/About";
 import LocationDetails from "./pages/LocationDetails/LocationDetails";
 import ErrorPage from "./pages/Error/Error";
 import Footer from "./components/Footer/Footer";
-import "./styles/index.css";
+// import "./styles/index.scss";
+import "./styles/css/style.css";
 
 export default function App() {
   return (

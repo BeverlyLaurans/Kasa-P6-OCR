@@ -26,6 +26,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
+    height: 85px;
 }
 
 .slideshow-navigation {
@@ -34,6 +35,7 @@
     display: flex;
     flex-direction: row;
     position: absolute;
+    height:100%;
 }
 
 .slideshow-navigation button {
@@ -42,6 +44,10 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+
+.slideshow-navigation img {
+    height: 100%;
 }
 
 .slideshow-counter {
@@ -56,4 +62,31 @@
 .slideshow-counter p {
     margin-bottom: 20px;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 1024px) {
+    .slideshow {
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .slideshow {
+        height: 300px;
+    }
+    .slideshow-informations {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slideshow {
+        height: 300px;
+    }
+    .slideshow-informations {
+        height: 25px;
+    }
+    .slideshow-counter {
+        display: none;
+    }
 }

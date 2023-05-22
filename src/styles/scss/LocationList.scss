@@ -58,3 +58,31 @@
     padding: 0 18px 18px 18px;
     margin: 0;
 }
+
+@media screen and (max-width: 1024px) {
+    .location-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .location-list {
+        /* grid-template-columns: 1fr; */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0;
+        background-color: #FFFFFF;
+    }
+    .location-card {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .location-card {
+        height: 250px;
+    }
+}
