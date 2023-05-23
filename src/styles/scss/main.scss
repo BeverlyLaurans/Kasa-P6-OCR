@@ -19,15 +19,16 @@ body {
   }
 }
 
-@import 'Header';
-@import 'Banner';
-@import 'LocationList';
-@import 'Collapse';
-@import 'Slideshow';
-@import 'Tags';
-@import 'Rating';
-@import 'Footer';
-@import 'Home';
-@import 'About';
-@import 'LocationDetails';
-@import 'Error';
+@import "./utils/variables";
+@import "./layouts/Header";
+@import "./components/Banner";
+@import "./components/LocationList";
+@import "./components/Collapse";
+@import "./components/Slideshow";
+@import "./components/Tags";
+@import "./components/Rating";
+@import "./layouts/Footer";
+@import "./pages/Home";
+@import "./pages/About";
+@import "./pages/LocationDetails";
+@import "./components/Error";

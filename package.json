@@ -17,7 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "sass --watch ./src/styles/scss/main.scss:./src/styles/css/style.css --style compressed"
+    "sass": "sass --watch ./src/styles/scss/main.scss:./src/styles/css/style.css --style compressed",
+    "prefix" : "postcss ./src/styles/css/style.css --use autoprefixer -d ./src/styles/css/prefixed/"
   },
   "eslintConfig": {
     "extends": [

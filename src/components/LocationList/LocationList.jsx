@@ -1,6 +1,6 @@
 import { locationDatas } from "../../datas/locationDatas.js";
 import { Link } from "react-router-dom";
-import "../../styles/scss/LocationList.scss";
+import "../../styles/scss/components/_LocationList.scss";
 
 function LocationList() {
     return (

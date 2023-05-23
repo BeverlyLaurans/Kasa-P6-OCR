@@ -1,4 +1,4 @@
-// import "../../styles/Error.scss";
+import "../../styles/scss/components/_Error.scss";
 
 function Error() {
     return (

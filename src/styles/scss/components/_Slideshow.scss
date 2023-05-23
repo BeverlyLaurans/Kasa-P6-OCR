@@ -1,3 +1,5 @@
+@import "../utils/variables";
+
 .slideshow {
     position: relative;
     display: flex;
@@ -7,6 +9,12 @@
     border-radius: 25px;
     justify-content: center ;
     align-items: center;
+    @media (max-width: 1024px) {
+        height: 350px;
+    }
+    @media (max-width: 768px) {
+        height: 300px;
+    }
     &__image {
         position: relative;
         width: 100%;
@@ -26,6 +34,12 @@
     align-items: center;
     z-index: 1;
     height: 85px;
+    @media (max-width: 768px) {
+        height: 60px;
+    }
+    @media (max-width: 480px) {
+        height: 25px;
+    }
     .slideshow-navigation {
         justify-content: space-between;
         width: 100%;
@@ -53,35 +67,11 @@
     height: 100%;
     justify-content: center;
     align-items: flex-end;
+    @media (max-width: 480px) {
+        display: none;
+    }
     p {
         margin-bottom: 20px;
-        color: #FFFFFF;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .slideshow {
-        height: 350px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .slideshow {
-        height: 300px;
-        &__informations {
-            height: 60px;
-        }
-    } 
-}
-
-@media screen and (max-width: 480px) {
-    .slideshow {
-        height: 300px;
-        &__informations {
-            height: 25px;
-        }
-        &__counter {
-            display: none;
-        }
+        color: $white;
     }
 }

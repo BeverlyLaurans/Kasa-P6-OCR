@@ -1,5 +1,7 @@
+@import "../utils/variables";
+
 .tag__name {
-    color: #FFFFFF;
+    color: $white;
     font-size: 14px;
     font-weight: 500;
 }

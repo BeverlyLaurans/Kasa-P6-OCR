@@ -1,7 +1,7 @@
 import Banner from "../../components/Banner/Banner";
 import LocationList from "../../components/LocationList/LocationList";
 import bannerImage from "../../assets/banner/banner-kasa.jpg";
-import "../../styles/scss/Home.scss";
+import "../../styles/scss/pages/_Home.scss";
 
 function Home() {
     return (

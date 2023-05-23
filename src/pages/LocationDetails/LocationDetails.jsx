@@ -5,7 +5,7 @@ import Tags from "../../components/Tags/Tags";
 import Collapse from "../../components/Collapse/Collapse";
 import Rating from "../../components/Rating/Rating";
 import { Navigate } from "react-router-dom";
-import "../../styles/scss/LocationDetails.scss";
+import "../../styles/scss/pages/_LocationDetails.scss";
 
 function LocationDetails() {
   const { locationId } = useParams();
