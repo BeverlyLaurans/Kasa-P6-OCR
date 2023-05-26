@@ -28,7 +28,7 @@
     }
 }
 
-.accordion__title {
+.accordions-wrapper-about .accordion__title {
     border-radius: 5px;
     @media (max-width: 768px) {
         height: 40px;
@@ -58,7 +58,7 @@
     }
 }
 
-.accordion__description {
+.accordions-wrapper-about .accordion__description {
     font-size: 22px;
     font-weight: 400;
     border-radius: 5px;

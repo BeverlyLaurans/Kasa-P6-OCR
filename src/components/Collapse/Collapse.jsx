@@ -18,9 +18,15 @@ function Collapse(props) {
 
     return (
       <div className="accordion">
-        <button className={`accordion__title ${activeButton ? "active" : ""}`} onClick={() => setActiveButton(!activeButton)}>
+        <button 
+        className={`accordion__title ${activeButton ? "active" : ""}`} 
+        onClick={() => setActiveButton(!activeButton)}
+        >
         <p>{categoryName}</p>
-        <img src={arrowDirection === "down" ? arrowDown : arrowUp} alt={`white-arrow-${arrowDirection}`}></img>
+        <img 
+        src={arrowDirection === "down" ? arrowDown : arrowUp} 
+        alt={`white-arrow-${arrowDirection}`}>
+        </img>
         </button>
         {activeButton && (
         <div className="accordion__description">

@@ -12,8 +12,8 @@ function Home() {
             imgText="Chez vous, partout et ailleurs"
             imgAlt="Rochers au bord de la mer"
           />
+        </div>
           <LocationList />
-          </div>
       </main>
     )
   }
