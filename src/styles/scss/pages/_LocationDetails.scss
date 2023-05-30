@@ -171,28 +171,6 @@ ul {
             width: 100%;
         }
     }
-    .accordion__title {
-        border-radius: 10px;
-        @media (max-width: 768px) {
-            height: 40px;
-        }
-        @media (max-width: 480px) {
-            height: 30px;
-            border-radius: 5px;
-        }
-        p {
-            margin: 0;
-            color: $white;
-            font-size: 18px;
-            font-weight: 500;
-            @media (max-width: 768px) {
-                font-size: 16px;
-            }
-            @media (max-width: 480px) {
-                font-size: 13px;
-            }
-        }
-    }
 }
 
 .accordions-wrapper-location .accordion__title {
@@ -234,4 +212,14 @@ ul {
         font-size: 17px;
         font-weight: 400;
     }
+}
+
+.accordion__description .active {
+    max-height: fit-content;
+    transition: 1s max-height 0.3s;
+}
+
+.category-details {
+    max-height: fit-content;
+    transition: 1s max-height 0.3s;
 }

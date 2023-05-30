@@ -18,7 +18,7 @@ function LocationDetails() {
       <main>
         <Slideshow 
         imgSrc={location.pictures}
-        imgAlt={`Photo ${location.title} ${location.location}`}
+        imgAlt={`${location.title} ${location.location}`}
         />
         <div className="location-about">
           <div className="location-main-informations">
