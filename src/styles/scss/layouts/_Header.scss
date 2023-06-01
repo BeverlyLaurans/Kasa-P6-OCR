@@ -18,6 +18,9 @@ header {
         @media (max-width: 768px) {
             height: 100%;
         }
+        @media (max-width: 480px) {
+            width: 50%;
+        }
     }
     .logo {
         height: 100%;
@@ -29,7 +32,6 @@ header {
         font-weight: 500;
         text-decoration: none;
         @media (max-width: 480px) {
-            width: 50%;
             display: flex;
             justify-content: flex-end;
         }
@@ -54,13 +56,15 @@ nav {
     }
     @media (max-width: 480px) {
         gap: 15px;
-        width: 50%;
+        width: fit-content;
+        flex-wrap: wrap;
     }
     a {
         @media (max-width: 768px) {
             font-size: 20px;
         }
         @media (max-width: 480px) {
+            min-width: fit-content;
             font-size: 12px;
             text-transform:uppercase;
         }

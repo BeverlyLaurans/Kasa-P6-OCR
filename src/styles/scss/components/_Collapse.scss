@@ -1,11 +1,13 @@
 @import "../utils/variables";
 
 .accordion {
+    position: relative;
     flex-direction: column;
     align-items: center;
     background-color: $secondary-color;
     width: 83%;
     &__title {
+        position: absolute;
         border: 0;
         display: flex;
         flex-direction: row;
@@ -20,15 +22,39 @@
             margin: 0;
             color: $white;
         }
-        img {
-            width: 24px;
-            height: 13px;
-        }
     }
-    &__description {
-        background-color: $secondary-color;
-        color: $main-color;
-        font-size: 17px;
-        font-weight: 400;
+}
+
+.accordion__title img {
+    width: 24px;
+    height: 13px;
+    transform: rotate(-180deg);
+    transition: transform 0.2s ease-in-out;
+    &.active {
+        transform: rotate(0deg);
+    }
+}
+
+.accordion__description {
+    background-color: $secondary-color;
+    color: $main-color;
+    padding: 0;
+    height: 45px;
+    font-size: 17px;
+    font-weight: 400;
+    transition: 0.2s linear;
+    &.active {
+        transition: 0.2s linear;
+        height: fit-content;
+    }
+}
+
+.accordion__description-details {
+    overflow: hidden;
+    height: 0;
+    &.active {
+        display: block;
+        padding-top: 45px;
+        height: fit-content;
     }
 }

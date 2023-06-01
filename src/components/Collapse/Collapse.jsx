@@ -1,20 +1,10 @@
-import { useState, useEffect } from "react";
-import arrowDown from "../../assets/icons/white-arrow-down.svg";
-import arrowUp from "../../assets/icons/white-arrow-up.svg";
+import { useState } from "react";
+import whiteArrow from "../../assets/icons/white-arrow.svg";
 import "../../styles/scss/components/_Collapse.scss";
 
 function Collapse(props) {
   const {categoryName, categoryDetails} = props;
   const [activeButton, setActiveButton] = useState(false);
-  const [arrowDirection, setArrowDirection] = useState("down");
-
-  useEffect(() => {
-    if (activeButton) {
-      setArrowDirection("up");
-    } else {
-      setArrowDirection("down");
-    }
-  }, [activeButton])
 
     return (
       <div className="accordion">
@@ -23,16 +13,14 @@ function Collapse(props) {
         onClick={() => setActiveButton(!activeButton)}
         >
         <p>{categoryName}</p>
-        <img 
-        src={arrowDirection === "down" ? arrowDown : arrowUp} 
-        alt={`white-arrow-${arrowDirection}`}>
+        <img className={`${activeButton ? "active" : ""}`}
+        src={whiteArrow}
+        >
         </img>
         </button>
-        {activeButton && (
-        <div className="accordion__description">
-          <div>{categoryDetails}</div>
+        <div className={`accordion__description ${activeButton ? "active" : ""}`}>
+          <div className={`accordion__description-details ${activeButton ? "active" : ""}`}>{categoryDetails}</div>
         </div>
-        )}
       </div>
     )
   }

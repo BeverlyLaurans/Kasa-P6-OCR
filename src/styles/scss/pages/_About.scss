@@ -62,11 +62,30 @@
     font-size: 22px;
     font-weight: 400;
     border-radius: 5px;
-    padding: 20px 15px;
+    padding: 0 15px;
+    &.active {
+        padding: 25px 15px;
+    }
     @media (max-width: 768px) {
+        height: 40px;
         font-size: 16px;
+        &.active {
+            height: fit-content;
+        }
     }
     @media (max-width: 480px) {
+        height: 30px;
         font-size: 12px;
+    }
+}
+
+.accordions-wrapper-about .accordion__description-details {
+    &.active {
+        @media (max-width: 768px) {
+            padding-top: 40px;
+        }
+        @media (max-width: 480px) {
+            padding-top: 25px;
+        }
     }
 }

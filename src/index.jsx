@@ -8,6 +8,7 @@ import LocationDetails from "./pages/LocationDetails/LocationDetails";
 import ErrorPage from "./pages/Error/Error";
 import Footer from "./components/Footer/Footer";
 import "./styles/css/prefixed/style.css";
+// import "./styles/css/style.css";
 
 export default function App() {
   return (

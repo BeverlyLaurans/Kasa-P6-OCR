@@ -199,14 +199,24 @@ ul {
 .accordions-wrapper-location .accordion__description {
     font-size: 16px;
     border-radius: 10px;
-    padding: 30px 20px;
+    padding: 0 18px;
+    &.active {
+        padding: 25px 18px;
+        height: fit-content;
+    }
     @media (max-width: 768px) {
+        height: 40px;
         font-size: 15px;
-        padding: 20px 20px;
+        &.active {
+            padding: 20px 20px;
+        }
     }
     @media (max-width: 480px) {
+        height: 30px;
         font-size: 12px;
-        padding: 15px 15px;
+        &.active {
+            padding: 15px 15px;
+        }
     }
     p {
         font-size: 17px;
@@ -214,12 +224,13 @@ ul {
     }
 }
 
-.accordion__description .active {
-    max-height: fit-content;
-    transition: 1s max-height 0.3s;
-}
-
-.category-details {
-    max-height: fit-content;
-    transition: 1s max-height 0.3s;
+.accordions-wrapper-location .accordion__description-details {
+    &.active {
+        @media (max-width: 768px) {
+            padding-top: 40px;
+        }
+        @media (max-width: 480px) {
+            padding-top: 35px;
+        }
+    }
 }
