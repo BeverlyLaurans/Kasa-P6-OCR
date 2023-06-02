@@ -38,9 +38,7 @@
 .accordion__description {
     background-color: $secondary-color;
     color: $main-color;
-    padding: 0;
     height: 45px;
-    font-size: 17px;
     font-weight: 400;
     transition: 0.2s linear;
     &.active {
@@ -51,10 +49,13 @@
 
 .accordion__description-details {
     overflow: hidden;
-    height: 0;
+    height: 45px;
+    transition: 0.2s linear;
+    display: flex;
+    align-items: flex-end;
     &.active {
+        transition: 0.2s linear;
         display: block;
-        padding-top: 45px;
         height: fit-content;
     }
 }

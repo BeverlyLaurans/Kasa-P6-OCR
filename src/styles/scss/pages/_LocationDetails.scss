@@ -197,11 +197,12 @@ ul {
 }
 
 .accordions-wrapper-location .accordion__description {
+    overflow: hidden;
     font-size: 16px;
     border-radius: 10px;
     padding: 0 18px;
     &.active {
-        padding: 25px 18px;
+        padding: 70px 18px 25px 18px;
         height: fit-content;
     }
     @media (max-width: 768px) {
@@ -225,6 +226,7 @@ ul {
 }
 
 .accordions-wrapper-location .accordion__description-details {
+    overflow: hidden;
     &.active {
         @media (max-width: 768px) {
             padding-top: 40px;

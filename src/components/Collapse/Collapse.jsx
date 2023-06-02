@@ -18,7 +18,9 @@ function Collapse(props) {
         >
         </img>
         </button>
-        <div className={`accordion__description ${activeButton ? "active" : ""}`}>
+        <div 
+        className={`accordion__description ${activeButton ? "active" : ""}`}
+        >
           <div className={`accordion__description-details ${activeButton ? "active" : ""}`}>{categoryDetails}</div>
         </div>
       </div>
